@@ -9,11 +9,14 @@ document.documentElement.classList.remove('no-js');
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ---------- LOADER ---------- */
+  /* ---------- LOADER ----------
+     Hides as soon as the DOM is ready (not window.load), so a slow font
+     or asset on the live server can't leave the loader stuck forever.
+     A hard safety timeout guarantees it disappears no matter what. */
   const loader = document.getElementById('loader');
-  window.addEventListener('load', () => {
-    setTimeout(() => loader && loader.classList.add('out'), 500);
-  });
+  if (loader) {
+    setTimeout(() => loader.classList.add('out'), 350);
+  }
 
   /* ---------- NAV SCROLL STATE ---------- */
   const nav = document.getElementById('nav');

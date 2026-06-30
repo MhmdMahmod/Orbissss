@@ -7,7 +7,11 @@
 <meta name="description" content="Orbis Development — residential, commercial, and mixed-use landmarks across Egypt for over 15 years.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Loaded async so a slow connection to Google Fonts can never block
+     the page from rendering. Falls back to system fonts instantly,
+     then swaps once the webfont arrives (font-display: swap). -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -141,7 +145,7 @@
 </section>
 
 <!-- ============ PROJECTS ============ -->
-<section class="section proj-section " id="projects">
+<section class="section proj-section" id="projects">
   <div class="hero-grid-lines proj-grid-lines"></div>
   <div class="container">
     <div class="section-head reveal">
@@ -156,10 +160,9 @@
     </div>
   </div>
 
-  <div class="projects-scroller container" id="ptrack">
+  <div class="projects-scroller" id="ptrack">
     <div class="project-card" data-tilt style="--accent:0">
       <div class="project-thumb">
-        <img src="./Images/14.jpg.jpeg" alt="">
         <span class="project-num">01</span>
         <span class="ph-tag">SNOVA — TANTA</span>
       </div>
@@ -172,7 +175,6 @@
     </div>
     <div class="project-card" data-tilt style="--accent:1">
       <div class="project-thumb">
-        <img src="./Images/15.jpg.jpeg" alt="">
         <span class="project-num">02</span>
         <span class="ph-tag">TOWN MALL — TANTA</span>
       </div>
@@ -185,7 +187,6 @@
     </div>
     <div class="project-card" data-tilt style="--accent:2">
       <div class="project-thumb">
-        <img src="./Images/16.jpg.jpeg" alt="">
         <span class="project-num">03</span>
         <span class="ph-tag">AL-FAYROUZ — MENOUFIA</span>
       </div>
@@ -198,7 +199,6 @@
     </div>
     <div class="project-card" data-tilt style="--accent:3">
       <div class="project-thumb">
-        <img src="./Images/17.jpg.jpeg" alt="">
         <span class="project-num">04</span>
         <span class="ph-tag">TEACHERS SYNDICATE</span>
       </div>
@@ -211,7 +211,6 @@
     </div>
     <div class="project-card" data-tilt style="--accent:4">
       <div class="project-thumb">
-        <img src="./Images/18.jpg.jpeg" alt="">
         <span class="project-num">05</span>
         <span class="ph-tag">AL-KAMAL — TANTA</span>
       </div>
@@ -224,7 +223,6 @@
     </div>
     <div class="project-card" data-tilt style="--accent:5">
       <div class="project-thumb">
-        <img src="./Images/19.jpg.jpeg" alt="">
         <span class="project-num">06</span>
         <span class="ph-tag">GREEN CITY — TANTA</span>
       </div>
@@ -237,7 +235,6 @@
     </div>
     <div class="project-card" data-tilt style="--accent:6">
       <div class="project-thumb">
-        <img src="./Images/20.jpg.jpeg" alt="">
         <span class="project-num">07</span>
         <span class="ph-tag">SAIDANAWY — BASYOUN</span>
       </div>
@@ -250,7 +247,6 @@
     </div>
     <div class="project-card" data-tilt style="--accent:7">
       <div class="project-thumb">
-        <img src="./Images/21.jpg.jpeg" alt="">
         <span class="project-num">08</span>
         <span class="ph-tag">RAS EL-BAR</span>
       </div>
